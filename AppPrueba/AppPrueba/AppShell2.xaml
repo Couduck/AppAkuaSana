@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Shell xmlns="http://xamarin.com/schemas/2014/forms" 
+       xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+       xmlns:local="clr-namespace:AkuaApp_v3.Views"
+       Title="AppPrueba"
+       x:Class="AppPrueba.AppShell2">
+
+    <!--
+        The overall app visual hierarchy is defined here, along with navigation.
+    
+        https://docs.microsoft.com/xamarin/xamarin-forms/app-fundamentals/shell/
+    -->
+
+    <Shell.Resources>
+        <ResourceDictionary>
+            <Style x:Key="BaseStyle" TargetType="Element">
+                <Setter Property="Shell.BackgroundColor" Value="{StaticResource Primary}" />
+                <Setter Property="Shell.ForegroundColor" Value="White" />
+                <Setter Property="Shell.TitleColor" Value="White" />
+                <Setter Property="Shell.DisabledColor" Value="#B4FFFFFF" />
+                <Setter Property="Shell.UnselectedColor" Value="#95FFFFFF" />
+                <Setter Property="Shell.TabBarBackgroundColor" Value="{StaticResource Primary}" />
+                <Setter Property="Shell.TabBarForegroundColor" Value="White"/>
+                <Setter Property="Shell.TabBarUnselectedColor" Value="#95FFFFFF"/>
+                <Setter Property="Shell.TabBarTitleColor" Value="White"/>
+            </Style>
+            <Style TargetType="TabBar" BasedOn="{StaticResource BaseStyle}" />
+            <Style TargetType="FlyoutItem" BasedOn="{StaticResource BaseStyle}" />
+        </ResourceDictionary>
+    </Shell.Resources>
+
+    <FlyoutItem  
+        FlyoutDisplayOptions="AsMultipleItems"
+        Shell.TabBarIsVisible="False">
+        
+        <ShellContent Title="Menu Principal" Icon="icon_feed.png" ContentTemplate="{DataTemplate local:MenuPrincipal}" />
+        <ShellContent Title="Carga de Clientes" Icon="icon_feed.png" ContentTemplate="{DataTemplate local:CargarClientes}" />
+        <ShellContent Title="Inicio del Dia" Icon="icon_feed.png" ContentTemplate="{DataTemplate local:IniciarDiaPage}" />
+        <ShellContent Title="Descarga Clientes" Icon="icon_feed.png" ContentTemplate="{DataTemplate local:DescargarClientesPage}" />
+        <ShellContent Title="Descarga Ventas" Icon="icon_feed.png" ContentTemplate="{DataTemplate local:DescargarVentasPage}" />
+    </FlyoutItem>
+    
+    <MenuItem 
+        x:Name = "CerrarSesion" Text="Cerrar Sesión" Clicked="CerrarSesion_Clicked">
+    </MenuItem>
+
+    <!--<TabBar>
+        <ShellContent Title="About" Icon="icon_about.png" Route="LogInPage" ContentTemplate="{DataTemplate local:LogInPage1}" />
+    </TabBar>-->
+
+
+
+    <!--
+        If you would like to navigate to this content you can do so by calling
+        await Shell.Current.GoToAsync("//LoginPage");
+    -->
+
+
+</Shell>

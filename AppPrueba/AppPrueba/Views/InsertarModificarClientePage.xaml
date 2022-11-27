@@ -1,0 +1,403 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:custom="clr-namespace:AkuaApp_v3.CustomElements"
+             x:Class="AkuaApp_v3.Views.InsertarModificarClientePage"
+             Title="{Binding TextoBarra}">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <Label Text="Clave"
+                   TextColor="Black"
+                    Margin="30,10,0,0"
+                />
+
+                <Frame
+                VerticalOptions="Center"
+                Padding="5"
+                Margin="30,0">
+                    <Entry 
+                        x:Name="ClaveCliente"
+                        Keyboard="Email"
+                        MaxLength="10">
+
+                        <Entry.Behaviors>
+                            <custom:LimitedEntry/>
+                        </Entry.Behaviors>
+                    </Entry>
+                    
+                    
+                </Frame>
+
+                <Label Text="Nombre"
+                   TextColor="Black"
+                    Margin="30,10,0,0"
+                />
+
+                <Frame
+                VerticalOptions="Center"
+                Padding="5"
+                Margin="30,0">
+                    <Entry 
+                        x:Name="NombreCliente"
+                        Keyboard="Default"
+                        MaxLength="35">
+
+                        <Entry.Behaviors>
+                            <custom:LimitedEntry/>
+                        </Entry.Behaviors>
+
+                    </Entry>
+                </Frame>
+
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+
+                    <StackLayout>
+                        <Label 
+                        Text="Telefono"
+                        TextColor="Black"
+                        Margin="30,10,0,0"/>
+
+                        <Frame
+                        VerticalOptions="Center"
+                        Padding="5"
+                        Margin="30,0">
+                            <Entry
+                                x:Name="TelefonoCliente"
+                                Keyboard="Numeric"
+                                MaxLength="10"/>
+                        </Frame>
+                    </StackLayout>
+
+                    <StackLayout Grid.Column="1">
+                        <Label 
+                        Text="Giro"
+                        TextColor="Black"
+                        Margin="30,10,0,0"/>
+
+                        <Frame
+                        VerticalOptions="Center"
+                        Padding="5"
+                        Margin="30,0">
+                            <Entry 
+                                x:Name="GiroCliente"
+                                Keyboard="Default"
+                                MaxLength="15">
+                                
+                                <Entry.Behaviors>
+                                    <custom:LimitedEntry/>
+                                </Entry.Behaviors>
+                                
+                            </Entry>
+                        </Frame>
+                    </StackLayout>
+                </Grid>
+
+                <StackLayout>
+                    <Label 
+                        Text="Calle"
+                        TextColor="Black"
+                        Margin="30,10,0,0"/>
+
+                    <Frame
+                        VerticalOptions="Center"
+                        Padding="5"
+                        Margin="30,0">
+                        <Entry
+                            x:Name="CalleCliente"
+                            Keyboard="Default"
+                            MaxLength="30">
+
+                            <Entry.Behaviors>
+                                <custom:LimitedEntry/>
+                            </Entry.Behaviors>
+                            
+                        </Entry>
+                    </Frame>
+                </StackLayout>
+
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+
+                    <StackLayout>
+                        <Label 
+                        Text="Num. Ext."
+                        TextColor="Black"
+                        Margin="30,10,0,0"/>
+
+                        <Frame
+                        VerticalOptions="Center"
+                        Padding="5"
+                        Margin="30,0">
+                            <Entry
+                            x:Name="NumExtCliente"
+                            Keyboard="Default"
+                            MaxLength="10">
+                                <Entry.Behaviors>
+                                    <custom:LimitedEntry/>
+                                </Entry.Behaviors>
+                            </Entry>
+                        </Frame>
+                    </StackLayout>
+
+                    <StackLayout Grid.Column="1">
+                        <Label 
+                        Text="Num. Int."
+                        TextColor="Black"
+                        Margin="30,10,0,0"/>
+
+                        <Frame
+                        VerticalOptions="Center"
+                        Padding="5"
+                        Margin="30,0">
+                            <Entry 
+                            x:Name="NumIntCliente"
+                            Keyboard="Default"
+                            MaxLength="10">
+                                <Entry.Behaviors>
+                                    <custom:LimitedEntry/>
+                                </Entry.Behaviors>
+                            </Entry>
+                        </Frame>
+                    </StackLayout>
+                </Grid>
+
+                <StackLayout>
+                    <Label 
+                        Text="Colonia"
+                        TextColor="Black"
+                        Margin="30,10,0,0"/>
+
+                    <Frame
+                        VerticalOptions="Center"
+                        Padding="5"
+                        Margin="30,0">
+                        <Entry
+                            x:Name="ColoniaCliente"
+                            Keyboard="Default"
+                            MaxLength="30">
+                            <Entry.Behaviors>
+                                <custom:LimitedEntry/>
+                            </Entry.Behaviors>
+                        </Entry>
+                    </Frame>
+                </StackLayout>
+
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+
+                    <StackLayout>
+                        <Label 
+                        Text="Estado"
+                        TextColor="Black"
+                        Margin="30,10,0,0"/>
+
+                        <Frame
+                        VerticalOptions="Center"
+                        Padding="5"
+                        Margin="30,0">
+                            <Entry
+                            x:Name="EstadoCliente"
+                            Keyboard="Default"
+                            MaxLength="20">
+                                <Entry.Behaviors>
+                                    <custom:LimitedEntry/>
+                                </Entry.Behaviors>
+                            </Entry>
+                        </Frame>
+                    </StackLayout>
+
+                    <StackLayout Grid.Column="1">
+                        <Label 
+                        Text="Delegacion/Municipio"
+                        TextColor="Black"
+                        Margin="30,10,0,0"/>
+
+                        <Frame
+                        VerticalOptions="Center"
+                        Padding="5"
+                        Margin="30,0">
+                            <Entry
+                            x:Name="DelMunCliente"
+                            Keyboard="Default"
+                            MaxLength="30">
+                                <Entry.Behaviors>
+                                    <custom:LimitedEntry/>
+                                </Entry.Behaviors>
+                            </Entry>
+                        </Frame>
+                    </StackLayout>
+                </Grid>
+
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+
+                    
+
+                    <StackLayout >
+                        <Label 
+                        Text="Codigo Postal"
+                        TextColor="Black"
+                        Margin="30,10,0,0"/>
+
+                        <Frame
+                        VerticalOptions="Center"
+                        Padding="5"
+                        Margin="30,0">
+                            <Entry
+                            x:Name="CodPostCliente"
+                            Keyboard="Numeric"
+                            MaxLength="5"/>
+                        </Frame>
+                    </StackLayout>
+
+                    <StackLayout Grid.Column="1">
+                        <Label 
+                        Text="Garrafon"
+                        TextColor="Black"
+                        Margin="30,10,0,0"/>
+
+                        <Frame
+                        VerticalOptions="Center"
+                        Padding="5"
+                        Margin="30,0">
+                            <Entry
+                            x:Name="GarrafonCliente"
+                            Keyboard="Default"
+                            MaxLength="10">
+                                <Entry.Behaviors>
+                                    <custom:LimitedEntry/>
+                                </Entry.Behaviors>
+                            </Entry>
+                        </Frame>
+                    </StackLayout>
+                </Grid>
+
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+
+                    <StackLayout>
+                        <Label 
+                        Text="Precio"
+                        TextColor="Black"
+                        Margin="30,10,0,0"/>
+
+                        <Frame
+                        VerticalOptions="Center"
+                        Padding="5"
+                        Margin="30,0">
+                            <Entry
+                            x:Name="PrecioCliente"
+                            Keyboard="Numeric"
+                            MaxLength="2"/>
+                        </Frame>
+                    </StackLayout>
+
+                    <StackLayout Grid.Column="1">
+                        <Label 
+                        Text="Forma de Pago"
+                        TextColor="Black"
+                        Margin="30,10,0,0"/>
+
+                        <Frame
+                        VerticalOptions="Center"
+                        Padding="5"
+                        Margin="30,0">
+                            <Entry
+                            x:Name="FormaPagoCliente"
+                            Keyboard="Default"
+                            MaxLength="1">
+                                <Entry.Behaviors>
+                                    <custom:LimitedEntry/>
+                                </Entry.Behaviors>
+                            </Entry>
+                        </Frame>
+                    </StackLayout>
+
+
+                </Grid>
+
+                <Grid 
+                    Margin="0,0,0,10">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+
+                    <StackLayout>
+                        <Label 
+                        Text="Tipo"
+                        TextColor="Black"
+                        Margin="30,10,0,0"/>
+
+                        <Frame
+                        BackgroundColor="LightGray"
+                        VerticalOptions="Center"
+                        Padding="5"
+                        Margin="30,0">
+                            <Entry
+                            x:Name="TipoCliente"
+                            Keyboard="Default"
+                            IsEnabled="False"/>
+                        </Frame>
+                    </StackLayout>
+
+                    <StackLayout Grid.Column="1">
+                        <Label 
+                        Text="Ultima Compra"
+                        TextColor="Black"
+                        Margin="30,10,0,0"/>
+
+                        <Frame
+                        BackgroundColor="LightGray"
+                        VerticalOptions="Center"
+                        Padding="5"
+                        Margin="30,0">
+                            <Entry
+                            x:Name="UltCompCliente"
+                            Keyboard="Default"
+                            IsEnabled="False"/>
+                        </Frame>
+                    </StackLayout>
+                </Grid>
+
+                <StackLayout
+                    Orientation="Horizontal"
+                    HorizontalOptions="Center">
+                    <Button
+                        x:Name="BotonFoto"
+                        Text="Tomar foto"
+                        Clicked="BotonFoto_Clicked"/>
+
+                    <Button
+                        x:Name="BotonGPS"
+                        Text="Obtener Coordenadas"
+                        Clicked="BotonGPS_Clicked"/>
+                </StackLayout>
+
+                <Button
+                    Margin="10,0,10,10"
+                    x:Name="RegistrarCliente"
+                    Text="GUARDAR CLIENTE NUEVO"
+                    Clicked="RegistrarCliente_Clicked"/>
+
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

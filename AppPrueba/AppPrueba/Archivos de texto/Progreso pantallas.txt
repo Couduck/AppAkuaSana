@@ -1,0 +1,156 @@
+﻿----------------------------------------------------------------------------------------------------------------------------------
+CargarClientes
+
+Progreso actual: Sigue corroborar el comportamiento del programa al encontrarse con una excepcion particular
+
+[X] Creación de elementos de interfaz básicos
+[X] Codificación del backpage de la interfaz
+[] Realizar pruebas que permitan corroborar el código en base a los requerimientos
+[] Refinamiento de excepciones
+[] Refinamiento de Interfaz
+[] Pruebas en dispositivo final
+[] Aprobación y Cierre
+----------------------------------------------------------------------------------------------------------------------------------
+
+----------------------------------------------------------------------------------------------------------------------------------
+DescargarClientes
+
+Progreso actual: Sigue corroborar el comportamiento del programa al encontrarse con una excepcion particular
+
+[X] Creación de elementos de interfaz básicos
+[X] Codificación del backpage de la interfaz
+[] Realizar pruebas que permitan corroborar el código en base a los requerimientos
+[] Refinamiento de excepciones
+[] Refinamiento de Interfaz
+[] Pruebas en dispositivo final
+[] Aprobación y Cierre
+----------------------------------------------------------------------------------------------------------------------------------
+
+----------------------------------------------------------------------------------------------------------------------------------
+DescargarVentas
+
+Progreso actual: Sigue corroborar el comportamiento del programa al encontrarse con una excepcion particular
+
+[X] Creación de elementos de interfaz básicos
+[X] Codificación del backpage de la interfaz
+[] Realizar pruebas que permitan corroborar el código en base a los requerimientos
+[] Refinamiento de excepciones
+[] Refinamiento de Interfaz
+[] Pruebas en dispositivo final
+[] Aprobación y Cierre
+----------------------------------------------------------------------------------------------------------------------------------
+
+----------------------------------------------------------------------------------------------------------------------------------
+IniciarDiaPage
+
+Progreso actual: Sigue crear los elementos de interfaz básicos (A LA ESPERA DE DISEÑO DE PÁGINA)
+
+[] Creación de elementos de interfaz básicos
+[] Codificación del backpage de la interfaz
+[] Realizar pruebas que permitan corroborar el código en base a los requerimientos
+[] Refinamiento de excepciones
+[] Refinamiento de Interfaz
+[] Pruebas en dispositivo final
+[] Aprobación y Cierre
+----------------------------------------------------------------------------------------------------------------------------------
+
+----------------------------------------------------------------------------------------------------------------------------------
+InsertarModificarClientePage
+
+Progreso actual: Sigue realizar pruebas en dispositivo final
+
+[~] Creación de elementos de interfaz básicos
+		-	[] VERIFICAR SI TODOS LOS CAMPOS CREADOS ESTÁN CORRECTOS (Hablar con Toño por si omitió alguno de los elementos o como es que se solucionaran)
+			-	OMITIRLOS POR AHORA
+		-	[] DEFINIR QUE CAMPOS SOLAMENTE CUENTAN CON OPCIONES FIJAS PARA CREAR UN SUB-MENÚ EN ELLOS
+			-	OMITIRLOS POR AHORA
+[X] Codificación del backpage de la interfaz
+[X] Realizar pruebas que permitan corroborar el código en base a los requerimientos
+		-	[X] VALIDACIÓN: Los campos de entrada validan al cliente antes de insertarlo como registro
+		-	[X] FOTO: Se pueden tomar fotos correctamente
+		-	[X] GPS: Se guarda la información actual de GPS del dispositivo correctamente
+		-	[X] GUARDADO CORRECTO: El programa guarda en la BD el cliente una vez ya aceptado (INSERT)
+		-	[X] CARGA DE DATOS DEL CLIENTE: El programa carga los datos del cliente en los campos de la página (UPDATE)
+		-	[X] GUARDADO DE ACTUALIZACIONES: El programa guarda correctamente la información de un cliente actualizado (UPDATE)
+[X] Refinamiento de excepciones
+		-	[X] COMAS: Lidiar con que el usuario final no pueda meter comas en ninguno de los campos en los que está la posibilidad
+[] Refinamiento de Interfaz
+		-	[X] INTERCALAR INSERT/UPDATE: Hacer que los textos y los colores a cambiar cambién cuando se alterna entre insertar o actualizar un registro
+[] Pruebas en dispositivo final
+[] Aprobación y Cierre
+----------------------------------------------------------------------------------------------------------------------------------
+
+----------------------------------------------------------------------------------------------------------------------------------
+ListaPage
+
+Progreso actual: Sigue añadir la funcionalidad al boton de registrar venta
+
+[X] Creación de elementos de interfaz básicos
+[] Codificación del backpage de la interfaz
+	-	[X] Poner funcionalidad al botón para el registro de venta
+		-	[X] Crear Página de registro de ventas
+		-	[X] Cargar la información correctamente a la página de ventas
+[] Realizar pruebas que permitan corroborar el código en base a los requerimientos
+[] Refinamiento de excepciones
+[] Refinamiento de Interfaz
+[] Pruebas en dispositivo final
+[] Aprobación y Cierre
+----------------------------------------------------------------------------------------------------------------------------------
+
+----------------------------------------------------------------------------------------------------------------------------------
+LogInPage
+
+Progreso actual: Sigue crear la tabla de usuarios permitidos
+
+[X] Creación de elementos de interfaz básicos
+[] Codificación del backpage de la interfaz
+		-	[] Crear modelo y tabla de lista de usuarios (Nombre y contraseña)
+		-	[] Insertar Usuarios falsos para realizar pruebas
+[] Realizar pruebas que permitan corroborar el código en base a los requerimientos
+		-	[] ENTRADA CORRECTA: El usuario entra bajo la etiqueta correcta (admin o estandar)
+[] Refinamiento de excepciones
+[] Refinamiento de Interfaz
+[] Pruebas en dispositivo final
+[] Aprobación y Cierre
+----------------------------------------------------------------------------------------------------------------------------------
+
+----------------------------------------------------------------------------------------------------------------------------------
+MenuPrincipal
+
+Progreso actual: Añadir páginas restantes al Flyout menu
+
+[X] Creación de elementos de interfaz básicos
+[] Codificación del backpage de la interfaz
+		-	[X] Completar Flyout
+				-	[X] Crear Página de Descarga de Ventas
+				-	[X] Crear Página de Descarga de Clientes
+		-	[] Buscar la forma en la que si sale de la aplicación sin cerrar sesión, no se vuelva a preguntar y se lleve directo al menu principal
+[] Realizar pruebas que permitan corroborar el código en base a los requerimientos
+[] Refinamiento de excepciones
+[] Refinamiento de Interfaz
+[] Pruebas en dispositivo final
+[] Aprobación y Cierre
+----------------------------------------------------------------------------------------------------------------------------------
+
+----------------------------------------------------------------------------------------------------------------------------------
+RegistrarNuevaVenta
+
+Progreso actual: Sigue crear ViewModel para modificar los estados de los botones de GPS 
+
+[X] Creación de elementos de interfaz básicos
+[] Codificación del backpage de la interfaz
+		-	[X]	Cargar los datos del cliente selecionado en los campos de la página
+		-	[X]	Crear modelo de ventas
+		-	[X]	Operaciones a la hora de ingresar cantidad de garrafones
+[X] Realizar pruebas que permitan corroborar el código en base a los requerimientos
+		-	[X] CARGA DE DATOS DEL CLIENTE: El programa carga los datos del cliente en los campos de la página
+		-	[X] VALIDACIÓN: Los campos de entrada validan al cliente antes de insertarlo como registro
+		-	[X] FOTO: Se pueden tomar fotos correctamente
+		-	[X] GPS: Se guarda la información actual de GPS del dispositivo correctamente
+		-	[X] GUARDADO CORRECTO: El programa guarda en la BD el cliente una vez ya aceptado
+[] Refinamiento de excepciones
+[] Refinamiento de Interfaz
+		-	[] Cambiar colores de botones en base a las actualizaciones de los clientes (Si ya tienen guardada la foto o el GPS)
+[] Pruebas en dispositivo final
+[] Aprobación y Cierre
+----------------------------------------------------------------------------------------------------------------------------------

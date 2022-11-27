@@ -1,0 +1,6 @@
+﻿----------------------------------------------------------------------------------------------------------------------------------
+ListaPage
+
+[] A la hora de pasar la clave puesta en el SearchBar, no se está pasando completamente con Mayusculas a la página siguiente
+[] Cuando se regresa a esta pagina desde aquella para insertar, si hay letras en la SearchBar, la lista a mostrar se resetea sin importar el valor en la SearchBar
+----------------------------------------------------------------------------------------------------------------------------------

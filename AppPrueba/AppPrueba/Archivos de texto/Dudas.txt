@@ -1,0 +1,20 @@
+﻿----------------------------------------------------------------------------------------------------------------------------------
+Inserción de clientes nuevos
+
+	1° ¿Que sucede con los campos que no forman parte de la interfaz gráfica (Status de cliente, Tipo de Factura y Forma de pago)?
+		R= Lo veo despues
+	
+	2° ¿Donde se guarda la ruta de la foto del cliente dentro del telefono?
+		R= Meterlo como campo adicional
+
+	3° ¿Cuales campos siempre contaran con opciones fijas?
+		R= Lo veo despues
+
+	4° ¿Lo que se hizo para definir el tipo del cliente es válido?
+		R= Si, todos empiezan como Vigente
+----------------------------------------------------------------------------------------------------------------------------------
+Registro de Ventas
+
+	1° ¿No el campo de ventas debería tener una clave ID alejada de la clave del cliente?
+		R= Si, corregido
+----------------------------------------------------------------------------------------------------------------------------------

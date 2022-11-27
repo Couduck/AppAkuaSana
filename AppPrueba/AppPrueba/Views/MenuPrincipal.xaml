@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AkuaApp_v3.Views.MenuPrincipal"
+             Title="Menu Principal">
+    <ContentPage.Content>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="0.33*"/>
+                <RowDefinition Height="0.33*"/>
+                <RowDefinition Height="0.33*"/>
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0.05*"/>
+                <ColumnDefinition Width="0.425*"/>
+                <ColumnDefinition Width="0.05*"/>
+                <ColumnDefinition Width="0.425*"/>
+                <ColumnDefinition Width="0.05*"/>
+            </Grid.ColumnDefinitions>
+
+            <Button
+                x:Name="Transacciones"
+                Grid.Column="1"
+                Text="Transacciones"
+                Clicked="Transacciones_Clicked"/>
+
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

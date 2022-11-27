@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AkuaApp_v3.Views.RegistrarNuevaVenta"
+             Title="Nueva Venta">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Clave"
+                   TextColor="Black"
+                    Margin="30,10,0,0"
+                />
+
+            <Frame
+                VerticalOptions="Center"
+                Padding="5"
+                Margin="10,0">
+                <Entry 
+                    x:Name="ClaveCliente"
+                    Keyboard="Email"
+                    MaxLength="10"
+                    IsEnabled="False">
+                </Entry>
+            </Frame>
+
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <StackLayout>
+                    <Label 
+                        Text="Cantidad"
+                        HorizontalOptions="Start"
+                        TextColor="Black"
+                        Margin="10,10,0,0"/>
+
+                    <Frame
+                        VerticalOptions="Center"
+                        Padding="5"
+                        Margin="10,0">
+                        <Entry
+                            x:Name="CantidadVenta"
+                            Keyboard="Numeric"
+                            MaxLength="10"
+                            TextChanged="CantidadVenta_TextChanged"/>
+                    </Frame>
+                </StackLayout>
+
+                <StackLayout Grid.Column="1">
+                    <Label 
+                        Text="Precio"
+                        TextColor="Black"
+                        Margin="10,10,0,0"/>
+
+                    <Frame
+                        VerticalOptions="Center"
+                        Padding="5"
+                        Margin="10,0">
+                        <Entry 
+                            x:Name="PrecioGarrafon"
+                            Keyboard="Default"
+                            MaxLength="15"
+                            IsEnabled="False">
+                        </Entry>
+                    </Frame>
+                </StackLayout>
+
+                <StackLayout Grid.Column="2">
+                    <Label 
+                        Text="Total"
+                        TextColor="Black"
+                        Margin="10,10,0,0"/>
+
+                    <Frame
+                        VerticalOptions="Center"
+                        Padding="5"
+                        Margin="10,0">
+                        <Entry 
+                            x:Name="TotalVenta"
+                            Keyboard="Default"
+                            MaxLength="15"
+                            IsEnabled="False">
+                        </Entry>
+                    </Frame>
+                </StackLayout>
+            </Grid>
+
+            <Label Text="Forma de pago"
+                   TextColor="Black"
+                    Margin="30,10,0,0"
+                />
+
+            <StackLayout
+                Orientation="Horizontal"
+                HorizontalOptions="Center">
+                    <RadioButton
+                        Content="Efectivo"
+                        CheckedChanged="RadioButton_CheckedChanged"/>
+                    <RadioButton
+                        Content="Transferencia"
+                        CheckedChanged="RadioButton_CheckedChanged"/>
+                    <RadioButton
+                        Content="Pendiente"
+                        CheckedChanged="RadioButton_CheckedChanged"/>
+            </StackLayout>
+            
+            
+            <StackLayout
+                    Orientation="Horizontal"
+                    HorizontalOptions="Center">
+                <Button
+                        x:Name="BotonFoto"
+                        Text="Tomar foto"
+                        Clicked="BotonFoto_Clicked"/>
+
+                <Button
+                        x:Name="BotonGPS"
+                        Text="Obtener Coordenadas"
+                        Clicked="BotonGPS_Clicked"/>
+            </StackLayout>
+
+            <Button
+                    Margin="10,0,10,10"
+                    x:Name="RegistrarVenta"
+                    Text="REGISTRAR VENTA"
+                    Clicked="RegistrarVenta_Clicked"/>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
